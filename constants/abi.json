@@ -1,0 +1,62 @@
+[
+    { "type": "constructor", "payable": false, "inputs": [] },
+    { "type": "error", "name": "ConfessionDapp__NotOwner", "inputs": [] },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "newConfession",
+        "inputs": [{ "type": "string", "name": "confession", "indexed": false }]
+    },
+    {
+        "type": "function",
+        "name": "clearConfessions",
+        "constant": false,
+        "payable": false,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "confess",
+        "constant": false,
+        "payable": false,
+        "inputs": [{ "type": "string", "name": "confession" }],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "confessions",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [{ "type": "uint256" }],
+        "outputs": [{ "type": "string" }]
+    },
+    {
+        "type": "function",
+        "name": "getConfessions",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "string[]" }]
+    },
+    {
+        "type": "function",
+        "name": "getDeployer",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "address" }]
+    },
+    {
+        "type": "function",
+        "name": "i_deployer",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "address" }]
+    }
+]
