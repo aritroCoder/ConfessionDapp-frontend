@@ -42,7 +42,8 @@ export default function PostConfession() {
 
     async function updateUi() {
         const confessionsListFromCall = await getConfessions()
-        setConfessions(confessionsListFromCall)
+        var array = [...confessionsListFromCall]; // creating a copy as original array is read only
+        setConfessions(array.reverse())
     }
 
     useEffect(() => {
@@ -99,6 +100,7 @@ export default function PostConfession() {
                             onError: (error) => console.log(error),
                         })
                     }}
+                    disabled={!isWeb3Enabled}
                 >
                     Post Confession
                 </button>
@@ -113,9 +115,15 @@ export default function PostConfession() {
             <div>
                 <h1 className={styles.heading}>Previous Confessions:</h1>
                 {confessions.map((message, index) => (
-                    <div style={{background: `${colors[index%4]}`}} className={styles.confession} key={index}>
-                        <span className={styles.confessionID}>#{index + 1}</span>{' '}
-                        <span className={styles.confessionMessage}>{message.length === 0 ? '[Empty confession]' : message}</span>
+                    <div
+                        style={{ background: `${colors[index % 4]}` }}
+                        className={styles.confession}
+                        key={index}
+                    >
+                        <span className={styles.confessionID}>#{confessions.length - index}</span>{' '}
+                        <span className={styles.confessionMessage}>
+                            {message.length === 0 ? '[Empty confession]' : message}
+                        </span>
                     </div>
                 ))}
             </div>
