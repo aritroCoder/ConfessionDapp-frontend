@@ -8,6 +8,8 @@ A frontend to a Decentralized application working on ethereum or other EVM based
 
 This next app uses a smart contract written using [Hardhat](https://hardhat.org/): [Contract repo](https://github.com/aritroCoder/confessions-smart-contract)
 
+This website is currently deployed at [https://confession-dapp-frontend.vercel.app/](https://confession-dapp-frontend.vercel.app/)
+
 
 ## Author
 
