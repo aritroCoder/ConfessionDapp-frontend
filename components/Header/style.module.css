@@ -1,6 +1,7 @@
 .navbar{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #3a4b7c;
@@ -11,4 +12,13 @@
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    margin-bottom: 5px;
+}
+.navLink{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-bottom: 5px;
 }

@@ -16,7 +16,7 @@ export default function PostConfession() {
 
     const dispatch = useNotification()
 
-    const colors = ['#2a0b77', '#6e0b77', '#0b3d77', '#2d4903'];
+    const colors = ['#2a0b77', '#6e0b77', '#0b3d77', '#2d4903']
 
     /** defining contract functions */
 
@@ -42,8 +42,10 @@ export default function PostConfession() {
 
     async function updateUi() {
         const confessionsListFromCall = await getConfessions()
-        var array = [...confessionsListFromCall]; // creating a copy as original array is read only
-        setConfessions(array.reverse())
+        if (confessionsListFromCall && confessionsListFromCall.length > 0) {
+            var array = [...confessionsListFromCall] // creating a copy as original array is read only
+            setConfessions(array.reverse())
+        }
     }
 
     useEffect(() => {
