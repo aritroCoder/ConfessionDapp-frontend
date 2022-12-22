@@ -1,0 +1,10 @@
+.instructions{
+    margin: 10px 20px;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
