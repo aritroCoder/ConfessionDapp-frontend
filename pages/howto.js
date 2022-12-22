@@ -19,7 +19,11 @@ export default function Home() {
                 <ol>
                     <li>
                         Install a web3 wallet (like{' '}
-                        <a href="https://metamask.io/download/" target="_blank">
+                        <a
+                            href="https://metamask.io/download/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Metamask
                         </a>
                         )
@@ -30,14 +34,18 @@ export default function Home() {
                     </li>
                     <li>
                         Go to a{' '}
-                        <a href="https://goerlifaucet.com/" target="_blank">
+                        <a
+                            href="https://goerlifaucet.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Goerli testnet faucet
                         </a>{' '}
                         and add some funds to your account (even 0.001ETH is fine)
                     </li>
                     <li>
-                        Now go back to <Link href='/'>Home page</Link> and use this app. If you run out of funds, go back
-                        to the faucet again
+                        Now go back to <Link href="/">Home page</Link> and use this app. If you run
+                        out of funds, go back to the faucet again
                     </li>
                 </ol>
             </div>
